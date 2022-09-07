@@ -1,6 +1,5 @@
 # wisper-spectator
-Handy test helpers for [Wisper.cr](https://github.com/gmartsenkov/wisper.cr)
-Only compatible with the (Spectator)(https://github.com/icy-arctic-fox/spectator/) testing framework.
+Handy [Wisper.cr](https://github.com/gmartsenkov/wisper.cr) test helpers for the [Spectator](https://github.com/icy-arctic-fox/spectator) testing library.
 
 ## Installation
 
