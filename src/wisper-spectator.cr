@@ -25,18 +25,18 @@ struct WisperBroadcastMatcher(ExpectedType) < Spectator::Matchers::ValueMatcher(
     @events.map(&.class).includes?(expected.value)
   end
 
-    private def values(actual : Spectator::Expression(T)) forall T
-      {
-        broadcasted: @events.inspect,
-        expected: expected.value.inspect
-      }
-    end
+  private def values(actual : Spectator::Expression(T)) forall T
+    {
+      broadcasted: @events.inspect,
+      expected:    expected.value.inspect,
+    }
+  end
 
-    private def negated_values(actual : Spectator::Expression(T)) forall T
-      {
-        broadcasted: @events.inspect
-      }
-    end
+  private def negated_values(actual : Spectator::Expression(T)) forall T
+    {
+      broadcasted: @events.inspect,
+    }
+  end
 
   # Message displayed when the matcher isn't satisfied.
   # The message should typically only contain the test expression labels.
